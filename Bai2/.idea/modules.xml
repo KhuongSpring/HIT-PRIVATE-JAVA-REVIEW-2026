@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/BTVN/BTVN.iml" filepath="$PROJECT_DIR$/BTVN/BTVN.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HitShop.java/BTVN2.iml" filepath="$PROJECT_DIR$/HitShop.java/BTVN2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Bai2.iml" filepath="$PROJECT_DIR$/.idea/Bai2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/trenlop/Menu/Menu.iml" filepath="$PROJECT_DIR$/trenlop/Menu/Menu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/trenlop/ThongKeDiem/ThongKeDiem.iml" filepath="$PROJECT_DIR$/trenlop/ThongKeDiem/ThongKeDiem.iml" />
+      <module fileurl="file://$PROJECT_DIR$/trenlop/Trenlop/Trenlop.iml" filepath="$PROJECT_DIR$/trenlop/Trenlop/Trenlop.iml" />
+    </modules>
+  </component>
+</project>

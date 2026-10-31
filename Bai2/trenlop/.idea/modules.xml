@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Menu/Menu.iml" filepath="$PROJECT_DIR$/Menu/Menu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ThongKeDiem/ThongKeDiem.iml" filepath="$PROJECT_DIR$/ThongKeDiem/ThongKeDiem.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Trenlop/Trenlop.iml" filepath="$PROJECT_DIR$/Trenlop/Trenlop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/trenlop.iml" filepath="$PROJECT_DIR$/.idea/trenlop.iml" />
+    </modules>
+  </component>
+</project>
