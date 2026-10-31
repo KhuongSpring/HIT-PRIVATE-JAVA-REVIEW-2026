@@ -7,6 +7,8 @@ public class HitShop {
     static ArrayList<Integer> quantities = new ArrayList();
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        addItem("Áo thun",150000,1);
+        addItem("Bình nước",50000,1);
         int choice;
         do{
             printMenu();
@@ -24,6 +26,7 @@ public class HitShop {
                     System.out.print("Xoa STT: ");
                     int index = Integer.parseInt(sc.nextLine());
                     removeItem(index);
+                    printItems();
                     break;
                 case 3:
                     printItems();
@@ -31,11 +34,15 @@ public class HitShop {
                 case 4:
                     System.out.println("Tong tien: " + calculateTotal());
                     break;
-                default:
+                case 0:
                     System.out.print("Kết thúc");
+                    break;
+                default:
+                    System.out.println("Lựa chọn không hợp lệ");
             }
         }while(choice != 0);
-        
+
+        System.out.println();
         searchItem(sc);
     }
     
@@ -55,7 +62,7 @@ public class HitShop {
     }
     static void removeItem(int index){
         if(index < 1 || index > names.size()){
-            System.out.print("Lựa chọn không hợp lệ");
+            System.out.print("Danh sách rỗng");
             return;
         }
         names.remove(index-1 );
@@ -115,10 +122,10 @@ public class HitShop {
             total
            );
        }
-       if (count == 0){
-        System.out.print("Không timg thấy mặt hàng");
-       }
     }
-}
+       if (count == 0){
+            System.out.print("Không timg thấy mặt hàng");
+        }
+    }
 }
 
