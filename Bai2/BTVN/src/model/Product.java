@@ -7,6 +7,18 @@ public class Product {
     private int stock;
 
     public Product(String id, String name, double price, int stock) {
+        if(id == null || id.trim().isEmpty()){
+            throw new IllegalArgumentException("ID khong duoc de trong! ");
+        }
+        if (name == null || name.trim().isEmpty()) {
+            throw new IllegalArgumentException("Ten khong duoc de trong !");
+        }
+        if (price <= 0) {
+            throw new IllegalArgumentException("Gia phai > 0 !");
+        }
+        if (stock < 0) {
+            throw new IllegalArgumentException("Khong ton tai hang ton kho !");
+        }
         this.id = id;
         this.name = name;
         this.price = price;
@@ -37,12 +49,17 @@ public class Product {
         this.price = price;
     }
 
-    public void setStock(int stock) {
-        this.stock = stock;
+    public void decreaseStock(int quantity) {
+        if (quantity <= 0 || quantity > stock) {
+            throw new IllegalArgumentException("So luong khong hop le !");
+        }
+        stock = -quantity;
     }
 
-    @Override
-    public String toString() {
-        return id + " | " + name + " | " + price + " | tồn: " + stock;
+    public String getDescription() {
+        return name;
     }
 }
+
+
+

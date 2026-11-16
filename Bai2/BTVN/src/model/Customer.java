@@ -21,16 +21,4 @@ public class Customer {
     public String getPhone() {
         return phone;
     }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setPhone(String phone) {
-        this.phone = phone;
-    }
-    @Override
-    public String toString() {
-        return id + " | " + name + " | " + phone;
-    }
 }
